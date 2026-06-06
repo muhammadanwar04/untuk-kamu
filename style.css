@@ -1,6 +1,3 @@
-/* =========================================================================
-   CORE & VARIABLE INITIALIZATION
-   ========================================================================= */
 :root {
     --bg-light: #fff0f3;
     --pink-light: #ffccd5;
@@ -31,21 +28,15 @@ body {
     color: var(--text-dark);
     overflow-x: hidden;
 }
-
-/* Custom Utilities */
 .hidden {
     display: none !important;
 }
 
-/* =========================================================================
-   WELCOME SCREEN (LUXURY MOTIF EDITION)
-   ========================================================================= */
 .welcome-overlay {
     position: fixed;
     top: 0; left: 0; 
     width: 100vw; height: 100vh;
     background-color: #ffe5ec;
-    /* Elegant Geometric Hearts Motif Pattern using CSS */
     background-image: 
         radial-gradient(var(--pink-medium) 15%, transparent 16%),
         radial-gradient(var(--pink-medium) 15%, transparent 16%);
@@ -125,9 +116,6 @@ body {
     transform: scale(0.96);
 }
 
-/* =========================================================================
-   STICKY NAVBAR
-   ========================================================================= */
 .navbar {
     position: fixed;
     top: 0; left: 0; width: 100%;
@@ -185,9 +173,6 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* =========================================================================
-   CORE LAYOUT SECTIONS WITH SMOOTH ENTRY ANIMATION
-   ========================================================================= */
 .main-wrapper {
     width: 100%;
     animation: fadeInContent 1.2s ease-out forwards;
@@ -231,7 +216,6 @@ body {
     border-radius: 2px;
 }
 
-/* --- HERO SECTION --- */
 .hero-section {
     height: 100vh;
     max-width: 100%;
@@ -302,7 +286,6 @@ body {
     animation: scrollAnim 1.5s infinite;
 }
 
-/* --- ABOUT TIMELINE SECTION --- */
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -360,7 +343,6 @@ body {
     color: var(--text-muted);
 }
 
-/* --- GALLERY GRID SECTION --- */
 .gallery-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -409,7 +391,6 @@ body {
     color: var(--text-muted);
 }
 
-/* --- REASONS SECTION --- */
 .reasons-container {
     display: flex;
     flex-direction: column;
@@ -446,7 +427,6 @@ body {
     color: var(--text-muted);
 }
 
-/* --- LETTER SECTION --- */
 .letter-section {
     padding-bottom: 100px;
 }
@@ -504,7 +484,6 @@ body {
     margin-top: 5px;
 }
 
-/* --- FOOTER --- */
 .footer {
     text-align: center;
     padding: 30px 20px;
@@ -514,9 +493,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* =========================================================================
-   INTERACTIVE PARTICLES
-   ========================================================================= */
 .heart-trail {
     position: fixed;
     pointer-events: none;
@@ -524,9 +500,6 @@ body {
     animation: floatParticle 2s ease-out forwards;
 }
 
-/* =========================================================================
-   ANIMATIONS & MEDIA QUERIES (DESKTOP OPTIMIZATION)
-   ========================================================================= */
 @keyframes cardFloat {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -548,7 +521,6 @@ body {
     100% { transform: translateY(-100px) scale(1.4); opacity: 0; }
 }
 
-/* Desktop Responsiveness Strategy */
 @media (min-width: 768px) {
     .timeline::before { left: 50%; transform: translateX(-50%); }
     .timeline-item { width: 50%; padding-left: 0; }
