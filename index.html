@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Endless Love Story ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <div id="welcome-screen" class="welcome-overlay">
+        <div class="welcome-card">
+            <div class="card-border-decor"></div>
+            <div class="main-heart-icon">❤️</div>
+            <h1 class="welcome-title">Haiii Sayangg</h1>
+            <p class="welcome-subtitle">Aku buatin website sederhana ini, khusus untuk kamu. sebagai wujud bahagia dan bersyukurnya aku bisa kenal, dan bisa jadi pasangan kamu</p>
+            <button id="btn-start" class="btn-premium" onclick="openSurat()">Buka Surat Cinta ✨</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="main-wrapper hidden">
+        
+        <nav class="navbar">
+            <div class="nav-logo">OurStory<span>.</span></div>
+            <div class="nav-links">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">Kisah Kita</a>
+                <a href="#gallery" class="nav-item">Galeri</a>
+                <a href="#reasons" class="nav-item">Alasan</a>
+                <a href="#letter" class="nav-item">Surat</a>
+            </div>
+            <button id="music-toggle" class="nav-music-btn">🎵</button>
+        </nav>
+
+        <header id="home" class="section hero-section">
+            <div class="hero-backdrop"></div>
+            <div class="hero-content">
+                <span class="hero-tagline">A Handmade Digital Gift For You</span>
+                <h1 class="hero-title">Kamu Adalah Separuh Jiwaku</h1>
+                <p class="hero-desc">Setiap detak jantung, setiap tawa, dan setiap memori yang kita lewatin sama sama, adalah bab terbaik dalam hidupku.</p>
+                <div class="scroll-indicator">
+                    <span class="mouse-wheel"></span>
+                    <p>Scroll ke bawah ya sayang</p>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <span class="section-subtitle">Awal Mula Semua Dimulai</span>
+                <h2 class="section-title">Lini Masa Cerita Kita</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Awal Semua Dimulai</span>
+                        <h3>Hari Pertama Kenal</h3>
+                        <p>Semua berawal dari kenal secara random di game Roblox, saling bercanda, sampai aku ngerasa kalau main gaada kamu, kaya ada yang kurang.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Mulai Dekat</span>
+                        <h3>Satu Frekuensi</h3>
+                        <p>Lewat cerita random, sampai akhirnya kita curhat soal pribadi di map relapse dan aku gamau diganggu sama siapapun, cuma kita berdua.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <span class="timeline-date">Komitmen</span>
+                        <h3>Saling Menggenggam</h3>
+                        <p>Hari di mana akhirnya kita pertama kali ketemu, setelah sekian lama tertunda, sampai sekarang ini, ngelewatin banyak masalah dan beribu maaf, sampai detik ini, kita masih tetap bertahan satu sama lain.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="section-header">
+                <span class="section-subtitle">Potret Kebahagiaan</span>
+                <h2 class="section-title">Sudut Kenangan</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-card format-large">
+                    <div class="gallery-img-wrapper">
+                        <img src="foto/foto1.jpeg" alt="Momen Indah 1" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Pap Tercantik</h3>
+                        <p>Sampai Sekarang, Foto ini selalu jadi favoritku .</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img-wrapper">
+                        <img src="foto/Foto2.jpeg" alt="Momen Indah 2" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Foto Selfie Terfavorit</h3>
+                        <p>Berulang kali aku ngeliat foto ini, karena memang sesuka itu.</p>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <div class="gallery-img-wrapper">
+                        <img src="foto/foto3.jpeg" alt="Momen Indah 3" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Senyuman Terindah Kamu</h3>
+                        <p>Hari dimana aku ngasih bunga ke 2 ku, secara diam diam ke kamu.</p>
+                    </div>
+                </div>
+                <div class="gallery-card format-wide">
+                    <div class="gallery-img-wrapper">
+                        <img src="foto/foto4.jpeg" alt="Momen Indah 4" loading="lazy">
+                    </div>
+                    <div class="gallery-info">
+                        <h3>Bunga Pertama</h3>
+                        <p>Bunga pertama yang aku kasih ke perempuan seumur hidupku.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reasons" class="section reasons-section">
+            <div class="section-header">
+                <span class="section-subtitle">Kenapa Cuma Kamu?</span>
+                <h2 class="section-title">Alasan Hatiku Milih Kamu</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="reasons-container">
+                <div class="reason-item">
+                    <div class="reason-number">01</div>
+                    <div class="reason-body">
+                        <h3>Ketulusan Tanpa Batas</h3>
+                        <p>Kamu menerima segala kurangku dan menjadikannya ruang untuk kita belajar tumbuh bersama tanpa tuntutan egois.</p>
+                    </div>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-number">02</div>
+                    <div class="reason-body">
+                        <h3>Sabar & Menenangkan</h3>
+                        <p>Di kala duniaku sedang bising dan berantakan, hadirmu selalu menjadi rumah paling teduh untuk pulang.</p>
+                    </div>
+                </div>
+                <div class="reason-item">
+                    <div class="reason-number">03</div>
+                    <div class="reason-body">
+                        <h3>Caramu Mencintaiku</h3>
+                        <p>Detail-detail kecil perhatianmu membuatku merasa menjadi orang paling beruntung dan berharga di dunia ini.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="letter" class="section letter-section">
+            <div class="letter-box">
+                <div class="letter-stamp">❤️</div>
+                <h2 class="letter-heading">Janji Kecil Untuk Kamu</h2>
+                <div class="letter-content">
+                    <p>Sayang, terima kasih banyak ya sudah bertahan sejauh ini bersamaku. Aku tahu perjalanan kita tidak selalu mulus, tapi bersamamu, aku tidak pernah takut menghadapi apa pun yang ada di depan sana.</p>
+                    <p>Website ini sengaja aku bangun baris demi baris menggunakan kode, sama seperti caraku merajut rasa sayangku pada ke kamu: penuh ketelitian, kesabaran, dan dedikasi penuh. Aku mau terus sayang sama dalam waktu yang lama, menjaga senyum kamu, dan selalu hadir untuk nemenin kamu meraih seluruh mimpi mimpi kamu.</p>
+                    <p class="letter-sign">Pasangan Hidup Kamu Yang Terbaik,</p>
+                    <p class="letter-author">Aku Sayang Kamu Selamanya</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Crafted with Passion & Absolute Love.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
